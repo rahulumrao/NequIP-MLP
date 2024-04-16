@@ -3,7 +3,7 @@
 
 This tutorial introduces a Machine Learning Interatomic Potential (MLP) model called NequIP.
 
-This particular tutorial is for the 22-water molecules in a 40 Å³ periodic box. The steps to build the MLP contain three stages:
+This is the tutorial for 22-water cluster in a 40 Å³ periodic box. The steps to build MLP requires following stages:
 
     1. Data generation          [00.data]
     2. Training                 [01.train]
@@ -11,7 +11,7 @@ This particular tutorial is for the 22-water molecules in a 40 Å³ periodic box
 
 For data generation, we will use the [Quantum Espresso](https://www.quantum-espresso.org/) package.
 
-Here, I am not going to explain how to generate the initial configuration. However, there are several ways to do that. The easiest way is to perform a classical MD simulation and then take the (M) random configurations and do the ab-initio calculations to get the potential energy and corresponding forces (in this case, we will be using Quantum Espresso).
+Here, I will not explain that, how to generate the initial configuration. However, there are several ways to do that. The easiest way is to perform a classical MD simulation and then take the (M) random configurations and perform the *ab-initio* calculations to get the potential energy and corresponding forces (in this case, we will be using Quantum Espresso).
 
 The initial 500 configurations (input and output) are stored in the **QE_In_File** and **QE_Out_File** folders inside the 00.data directory. (You can re-run the inputs if you want).
 
