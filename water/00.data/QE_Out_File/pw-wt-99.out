@@ -1,0 +1,881 @@
+
+     Program PWSCF v.7.2 starts on 27Mar2024 at  5:46:22 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    32 processors
+
+     MPI processes distributed on     1 nodes
+     170260 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from pw-wt-99.in
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file O.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     gamma-point specific algorithms are used
+
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1707    1707    426               301015   301015   37634
+     Max        1710    1710    428               301034   301034   37648
+     Sum       54693   54693  13673              9632757  9632757 1204469
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      75.7119  a.u.
+     unit-cell volume          =  434002.3113 (a.u.)^3
+     number of atoms/cell      =           66
+     number of atomic types    =            2
+     number of electrons       =       176.00
+     number of Kohn-Sham states=           88
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     120.0000  Ry
+     scf convergence threshold =      1.0E-06
+     mixing beta               =       0.5000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  75.711877  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for H  read from file:
+     /share/pfaendtnergroup/rverma7/QE_PP/H.pbe-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: f52b6d4d1c606e5624b1dc7b2218f220
+     Pseudo is Ultrasoft, Zval =  1.0
+     Generated using "atomic" code by A. Dal Corso  v.5.1
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for O  read from file:
+     /share/pfaendtnergroup/rverma7/QE_PP/O.pbe-n-kjpaw_psl.0.1.UPF
+     MD5 check sum: 0234752ac141de4415c5fc33072bef88
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.99 svn rev. 10869
+     Shape of augmentation charge: BESSEL
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        H              1.00     1.00800     H ( 1.00)
+        O              6.00    15.99900     O ( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (   0.3516286   0.3051791   0.3287658  )
+         2           H   tau(   2) = (   0.3240734   0.3200300   0.3035817  )
+         3           H   tau(   3) = (   0.3393735   0.1686010   0.5113690  )
+         4           H   tau(   4) = (   0.3554474   0.1827281   0.4768751  )
+         5           H   tau(   5) = (   0.2899788   0.3083739   0.4661675  )
+         6           H   tau(   6) = (   0.3081992   0.3356795   0.4942718  )
+         7           H   tau(   7) = (   0.3141645   0.1111693   0.4365656  )
+         8           H   tau(   8) = (   0.3362785   0.1412455   0.4553101  )
+         9           H   tau(   9) = (   0.2488955   0.2634219   0.3335580  )
+        10           H   tau(  10) = (   0.2112317   0.2663422   0.3475353  )
+        11           H   tau(  11) = (   0.1985024   0.2744540   0.4113066  )
+        12           H   tau(  12) = (   0.2263322   0.2806440   0.3911893  )
+        13           H   tau(  13) = (   0.3299638   0.1217272   0.3608886  )
+        14           H   tau(  14) = (   0.3236990   0.1452390   0.3919131  )
+        15           H   tau(  15) = (   0.3202795   0.2254836   0.3928117  )
+        16           H   tau(  16) = (   0.3246974   0.2621240   0.4075877  )
+        17           H   tau(  17) = (   0.1392238   0.2430550   0.3815550  )
+        18           H   tau(  18) = (   0.1767877   0.2324972   0.3689255  )
+        19           H   tau(  19) = (   0.3758892   0.2293024   0.3795582  )
+        20           H   tau(  20) = (   0.3896169   0.2667915   0.3841258  )
+        21           H   tau(  21) = (   0.2863597   0.1659304   0.3645326  )
+        22           H   tau(  22) = (   0.2617497   0.1876451   0.3872956  )
+        23           H   tau(  23) = (   0.3273930   0.3058530   0.3691252  )
+        24           H   tau(  24) = (   0.3537502   0.3053288   0.4031698  )
+        25           H   tau(  25) = (   0.2553351   0.2714090   0.4395607  )
+        26           H   tau(  26) = (   0.2921752   0.2616997   0.4361662  )
+        27           H   tau(  27) = (   0.3775115   0.3091476   0.4583552  )
+        28           H   tau(  28) = (   0.3392737   0.3215525   0.4485960  )
+        29           H   tau(  29) = (   0.3435667   0.2172220   0.3358542  )
+        30           H   tau(  30) = (   0.3377012   0.1838512   0.3603644  )
+        31           H   tau(  31) = (   0.3745663   0.2275053   0.4372644  )
+        32           H   tau(  32) = (   0.3368277   0.2403095   0.4528641  )
+        33           H   tau(  33) = (   0.2860851   0.3466866   0.4331711  )
+        34           H   tau(  34) = (   0.2619993   0.3708224   0.4073630  )
+        35           H   tau(  35) = (   0.2873081   0.3340572   0.3757145  )
+        36           H   tau(  36) = (   0.2713590   0.3111444   0.3462623  )
+        37           H   tau(  37) = (   0.2694122   0.2063397   0.4510171  )
+        38           H   tau(  38) = (   0.2366904   0.1892924   0.4382379  )
+        39           H   tau(  39) = (   0.3553476   0.2323225   0.2869837  )
+        40           H   tau(  40) = (   0.3410957   0.2588793   0.3129165  )
+        41           H   tau(  41) = (   0.2709347   0.2136279   0.3290403  )
+        42           H   tau(  42) = (   0.2885811   0.2393361   0.3042306  )
+        43           H   tau(  43) = (   0.1940097   0.1729190   0.3468364  )
+        44           H   tau(  44) = (   0.2248097   0.1964308   0.3505054  )
+        45           O   tau(  45) = (   0.3437165   0.3028079   0.3053288  )
+        46           O   tau(  46) = (   0.3466367   0.1613378   0.4875078  )
+        47           O   tau(  47) = (   0.3049794   0.3309123   0.4688381  )
+        48           O   tau(  48) = (   0.3261201   0.1318607   0.4322726  )
+        49           O   tau(  49) = (   0.2336952   0.2780232   0.3474604  )
+        50           O   tau(  50) = (   0.2221889   0.2762511   0.4145264  )
+        51           O   tau(  51) = (   0.3206789   0.1439411   0.3660552  )
+        52           O   tau(  52) = (   0.3100462   0.2428803   0.4091601  )
+        53           O   tau(  53) = (   0.1652065   0.2491202   0.3830525  )
+        54           O   tau(  54) = (   0.3931611   0.2432797   0.3918632  )
+        55           O   tau(  55) = (   0.2663672   0.1824036   0.3621116  )
+        56           O   tau(  56) = (   0.3515787   0.2981904   0.3767877  )
+        57           O   tau(  57) = (   0.2776738   0.2731561   0.4526145  )
+        58           O   tau(  58) = (   0.3604143   0.3084737   0.4404842  )
+        59           O   tau(  59) = (   0.3448147   0.2077624   0.3605890  )
+        60           O   tau(  60) = (   0.3598153   0.2315737   0.4573568  )
+        61           O   tau(  61) = (   0.2775490   0.3515288   0.4086609  )
+        62           O   tau(  62) = (   0.2939723   0.3188569   0.3552976  )
+        63           O   tau(  63) = (   0.2618745   0.1880694   0.4336204  )
+        64           O   tau(  64) = (   0.3376513   0.2341944   0.3047298  )
+        65           O   tau(  65) = (   0.2660427   0.2338700   0.3131411  )
+        66           O   tau(  66) = (   0.2003245   0.1963809   0.3510046  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:  4816379 G-vectors     FFT dimensions: ( 270, 270, 270)
+
+     Estimated max dynamical RAM per process >     612.29 MB
+
+     Estimated total dynamical RAM >      19.13 GB
+
+     Check: negative core charge=   -0.000006
+
+     Initial potential from superposition of free atoms
+
+     starting charge     175.9995, renormalised to     176.0000
+
+     negative rho (up, down):  3.702E-01 0.000E+00
+     Starting wfcs are  132 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        8.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.362E-01 0.000E+00
+
+     total cpu time spent up to now is       17.9 secs
+
+     total energy              =    -965.73527614 Ry
+     estimated scf accuracy    <       6.88199495 Ry
+
+     iteration #  2     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  3.91E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.561E-01 0.000E+00
+
+     total cpu time spent up to now is       27.4 secs
+
+     total energy              =    -967.65393211 Ry
+     estimated scf accuracy    <       0.99447878 Ry
+
+     iteration #  3     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  5.65E-04,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.990E-01 0.000E+00
+
+     total cpu time spent up to now is       35.8 secs
+
+     total energy              =    -967.70719910 Ry
+     estimated scf accuracy    <       0.12982885 Ry
+
+     iteration #  4     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  7.38E-05,  avg # of iterations =  3.0
+
+     negative rho (up, down):  5.002E-01 0.000E+00
+
+     total cpu time spent up to now is       47.7 secs
+
+     total energy              =    -967.73035084 Ry
+     estimated scf accuracy    <       0.03590523 Ry
+
+     iteration #  5     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  2.04E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.992E-01 0.000E+00
+
+     total cpu time spent up to now is       55.5 secs
+
+     total energy              =    -967.73066334 Ry
+     estimated scf accuracy    <       0.00714217 Ry
+
+     iteration #  6     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  4.06E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.986E-01 0.000E+00
+
+     total cpu time spent up to now is       63.7 secs
+
+     total energy              =    -967.73094926 Ry
+     estimated scf accuracy    <       0.00143627 Ry
+
+     iteration #  7     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  8.16E-07,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.983E-01 0.000E+00
+
+     total cpu time spent up to now is       72.2 secs
+
+     total energy              =    -967.73102285 Ry
+     estimated scf accuracy    <       0.00030720 Ry
+
+     iteration #  8     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  1.75E-07,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.982E-01 0.000E+00
+
+     total cpu time spent up to now is       81.5 secs
+
+     total energy              =    -967.73108761 Ry
+     estimated scf accuracy    <       0.00002243 Ry
+
+     iteration #  9     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  1.27E-08,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.983E-01 0.000E+00
+
+     total cpu time spent up to now is       90.5 secs
+
+     total energy              =    -967.73108908 Ry
+     estimated scf accuracy    <       0.00000956 Ry
+
+     iteration # 10     ecut=    30.00 Ry     beta= 0.50
+     Davidson diagonalization with overlap
+     ethr =  5.43E-09,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.983E-01 0.000E+00
+
+     total cpu time spent up to now is       98.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (602235 PWs)   bands (ev):
+
+   -25.9673 -25.8625 -25.4439 -25.3666 -25.2903 -25.1576 -25.0929 -25.0480
+   -24.9559 -24.7652 -24.7478 -24.6923 -24.6702 -24.6636 -24.3595 -24.2711
+   -24.1843 -24.0807 -24.0593 -23.9163 -23.3405 -22.8812 -13.7420 -13.6753
+   -13.4452 -13.3922 -13.1888 -13.1008 -12.9849 -12.8563 -12.7869 -12.6523
+   -12.5777 -12.5197 -12.4629 -12.4205 -12.3337 -12.2134 -12.1911 -12.0940
+   -11.9239 -11.8202 -11.5937 -11.5060 -10.8531 -10.6995 -10.6137 -10.4583
+   -10.3103 -10.0696  -9.9346  -9.8051  -9.6609  -9.4500  -9.3116  -9.0838
+    -8.9125  -8.8328  -8.6649  -8.5919  -8.4382  -8.2814  -8.2364  -8.1051
+    -8.0360  -7.8005  -7.6731  -7.5840  -7.5567  -7.4281  -7.3831  -7.3707
+    -7.1797  -7.1103  -7.0786  -7.0580  -7.0133  -6.9742  -6.9736  -6.9038
+    -6.7558  -6.6504  -6.5879  -6.5336  -6.4488  -6.2906  -5.9310  -5.5728
+
+     highest occupied level (ev):    -5.5728
+
+!    total energy              =    -967.73108965 Ry
+     estimated scf accuracy    <       0.00000082 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =   -6089.72986044 Ry
+     hartree contribution      =    3081.24378376 Ry
+     xc contribution           =    -193.70240066 Ry
+     ewald contribution        =    2443.76978560 Ry
+     one-center paw contrib.   =    -209.31239791 Ry
+
+     convergence has been achieved in  10 iterations
+
+     negative rho (up, down):  4.983E-01 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00099028    0.01396241    0.00159501
+     atom    2 type  1   force =     0.07212826   -0.07113749    0.02003683
+     atom    3 type  1   force =     0.02278398   -0.02776789   -0.09086772
+     atom    4 type  1   force =    -0.01683530   -0.01171576    0.01875800
+     atom    5 type  1   force =     0.03575561    0.02198043   -0.00021017
+     atom    6 type  1   force =    -0.01814616   -0.01803657   -0.09826960
+     atom    7 type  1   force =    -0.00106123   -0.00126442    0.01160268
+     atom    8 type  1   force =    -0.04954061   -0.03348983   -0.06075745
+     atom    9 type  1   force =    -0.00633699   -0.02114314    0.00181755
+     atom   10 type  1   force =     0.04951248    0.02920833   -0.01648778
+     atom   11 type  1   force =    -0.05883564   -0.02121586    0.03056891
+     atom   12 type  1   force =     0.06194599    0.00865366   -0.05275985
+     atom   13 type  1   force =    -0.00762684    0.01376169   -0.00397805
+     atom   14 type  1   force =    -0.00334919   -0.02010859   -0.02716781
+     atom   15 type  1   force =    -0.01280438    0.04100794    0.01879731
+     atom   16 type  1   force =     0.03192430    0.01596877   -0.03420637
+     atom   17 type  1   force =     0.12879868    0.02646281    0.00112502
+     atom   18 type  1   force =    -0.00636178   -0.02448879    0.00198844
+     atom   19 type  1   force =     0.02380284    0.02094973    0.00920188
+     atom   20 type  1   force =    -0.01155371   -0.03504318    0.00964695
+     atom   21 type  1   force =    -0.05166168    0.02810790   -0.02577487
+     atom   22 type  1   force =     0.01871274   -0.00317158   -0.06219436
+     atom   23 type  1   force =     0.05363080   -0.02657651    0.02149686
+     atom   24 type  1   force =     0.01426714   -0.02248256   -0.10227649
+     atom   25 type  1   force =     0.02809879    0.02170685    0.02972177
+     atom   26 type  1   force =     0.00423433   -0.01436132   -0.00510479
+     atom   27 type  1   force =    -0.01939483   -0.00219383   -0.02174959
+     atom   28 type  1   force =     0.05300505   -0.03163742    0.01086730
+     atom   29 type  1   force =    -0.00378926   -0.02753134    0.04724795
+     atom   30 type  1   force =     0.01458144    0.01242525   -0.01027246
+     atom   31 type  1   force =    -0.04817463    0.03792617    0.00579364
+     atom   32 type  1   force =     0.05174889   -0.02342040   -0.03252393
+     atom   33 type  1   force =    -0.03409601    0.03287014   -0.06559596
+     atom   34 type  1   force =     0.02382195   -0.02510859    0.02039708
+     atom   35 type  1   force =     0.00986460   -0.03297806   -0.03776122
+     atom   36 type  1   force =     0.05112419    0.00587301    0.02960780
+     atom   37 type  1   force =    -0.01409315   -0.06237355   -0.07609158
+     atom   38 type  1   force =     0.06222469   -0.00932716   -0.01832951
+     atom   39 type  1   force =    -0.03185326    0.00070765    0.02802219
+     atom   40 type  1   force =    -0.01823384   -0.03438192   -0.03894545
+     atom   41 type  1   force =    -0.01430565    0.05503785   -0.03049346
+     atom   42 type  1   force =    -0.01290691   -0.00905563    0.00391680
+     atom   43 type  1   force =     0.00706802    0.02044115    0.00333435
+     atom   44 type  1   force =     0.01436074   -0.01488396    0.00029794
+     atom   45 type  2   force =    -0.05528660    0.04850306   -0.00600822
+     atom   46 type  2   force =     0.00423257    0.06049159    0.06808772
+     atom   47 type  2   force =    -0.03391846   -0.01702178    0.08033843
+     atom   48 type  2   force =     0.04043969    0.03359139    0.03963371
+     atom   49 type  2   force =    -0.05757889    0.00169935    0.00876011
+     atom   50 type  2   force =     0.00509195    0.00660820    0.03363478
+     atom   51 type  2   force =     0.01914139   -0.00853946    0.05329253
+     atom   52 type  2   force =     0.00977921   -0.05607645   -0.03275571
+     atom   53 type  2   force =    -0.12382677   -0.01039384   -0.00206540
+     atom   54 type  2   force =    -0.00259325   -0.00063432   -0.00907662
+     atom   55 type  2   force =     0.02437287   -0.01447465    0.08056570
+     atom   56 type  2   force =    -0.04921699    0.04072235    0.06261132
+     atom   57 type  2   force =    -0.06768717    0.01426256    0.01452047
+     atom   58 type  2   force =    -0.03327524    0.03665110    0.02718813
+     atom   59 type  2   force =    -0.00847471   -0.00369689   -0.00796821
+     atom   60 type  2   force =     0.01547824   -0.03271808    0.03759973
+     atom   61 type  2   force =     0.00726313    0.01006467    0.06164171
+     atom   62 type  2   force =    -0.07713835    0.03343275   -0.00205678
+     atom   63 type  2   force =    -0.05700975    0.07095897    0.08626648
+     atom   64 type  2   force =     0.04208088    0.06491509   -0.02848706
+     atom   65 type  2   force =     0.03818551   -0.05712799    0.02461542
+     atom   66 type  2   force =    -0.03150344   -0.00337401   -0.00436203
+     The non-local contrib.  to forces
+     atom    1 type  1   force =    -0.03537406   -0.00809723   -0.09768291
+     atom    2 type  1   force =     0.06405816   -0.05600119    0.00748779
+     atom    3 type  1   force =     0.02428885   -0.02226372   -0.08060033
+     atom    4 type  1   force =    -0.03349793   -0.07882669    0.04171568
+     atom    5 type  1   force =     0.03651146    0.05343585    0.00767981
+     atom    6 type  1   force =    -0.01163011   -0.01705224   -0.08315321
+     atom    7 type  1   force =     0.05569830    0.09517696   -0.01719177
+     atom    8 type  1   force =    -0.02790273   -0.02631320   -0.05964565
+     atom    9 type  1   force =    -0.05728689    0.05122014    0.05087961
+     atom   10 type  1   force =     0.08595669    0.04215252   -0.00156934
+     atom   11 type  1   force =     0.11633697    0.00922927    0.01625747
+     atom   12 type  1   force =    -0.02085408   -0.02097485    0.11088491
+     atom   13 type  1   force =    -0.04016450    0.09596581    0.02414193
+     atom   14 type  1   force =    -0.00907972   -0.00607321   -0.08377488
+     atom   15 type  1   force =    -0.03155141    0.05749835    0.05344581
+     atom   16 type  1   force =    -0.06770382   -0.09112033    0.00711537
+     atom   17 type  1   force =     0.07610541    0.01542363    0.00226648
+     atom   18 type  1   force =    -0.05242816    0.07074895    0.05938473
+     atom   19 type  1   force =     0.06177341    0.05396020    0.04372385
+     atom   20 type  1   force =     0.01273006   -0.09583713    0.02992586
+     atom   21 type  1   force =    -0.06359521    0.05321381   -0.00606598
+     atom   22 type  1   force =     0.01543752   -0.01740946   -0.08147877
+     atom   23 type  1   force =     0.06706448   -0.02020972    0.02290168
+     atom   24 type  1   force =    -0.00724692   -0.01610188   -0.06041822
+     atom   25 type  1   force =     0.07459678    0.00568767    0.04246117
+     atom   26 type  1   force =    -0.05744534    0.04697543    0.06543233
+     atom   27 type  1   force =    -0.07367665   -0.00057099   -0.07383448
+     atom   28 type  1   force =     0.06672998   -0.03998955   -0.02240711
+     atom   29 type  1   force =     0.00191129   -0.02499279    0.06290147
+     atom   30 type  1   force =     0.02783524    0.09588752   -0.00083589
+     atom   31 type  1   force =    -0.06096301    0.01591051    0.07456213
+     atom   32 type  1   force =     0.09332259   -0.03541721    0.01378918
+     atom   33 type  1   force =    -0.02746921    0.01695425   -0.07278185
+     atom   34 type  1   force =     0.06542195   -0.07986632    0.00898291
+     atom   35 type  1   force =     0.01763481   -0.04499928   -0.06004159
+     atom   36 type  1   force =     0.08215856    0.02847332    0.03383595
+     atom   37 type  1   force =    -0.02618971   -0.05764239   -0.05456250
+     atom   38 type  1   force =     0.09048296   -0.00311480   -0.01516716
+     atom   39 type  1   force =    -0.06935886    0.00888038    0.07097936
+     atom   40 type  1   force =    -0.00897042   -0.07805234   -0.02656753
+     atom   41 type  1   force =    -0.01361589    0.06487443   -0.05099062
+     atom   42 type  1   force =    -0.09340540   -0.02350236    0.03878898
+     atom   43 type  1   force =     0.02948382    0.10028818    0.01789449
+     atom   44 type  1   force =    -0.10955742   -0.00242658    0.00180534
+     atom   45 type  2   force =    -0.87755985    1.14108656    1.56701784
+     atom   46 type  2   force =    -0.04266205    1.82463930    0.80712351
+     atom   47 type  2   force =    -0.48800780   -0.72205274    1.48597759
+     atom   48 type  2   force =    -0.31291524   -1.05500604    1.44314954
+     atom   49 type  2   force =    -0.68137302   -1.62514105   -0.73295975
+     atom   50 type  2   force =    -1.28705150    0.14566593   -1.59015524
+     atom   51 type  2   force =     0.76914961   -1.39718134    1.10058191
+     atom   52 type  2   force =     1.62031848    0.37637886   -0.80481398
+     atom   53 type  2   force =    -0.96828470   -1.54257065   -1.15147358
+     atom   54 type  2   force =    -1.40946728    0.75401007   -1.25722063
+     atom   55 type  2   force =     0.81322353   -0.50466064    1.55742125
+     atom   56 type  2   force =    -1.21397108    0.81083215    0.88625740
+     atom   57 type  2   force =    -0.31356095   -0.45020441   -1.61180247
+     atom   58 type  2   force =     0.00822209    0.93829294    1.58202375
+     atom   59 type  2   force =    -0.54509929   -1.00454648   -1.10443071
+     atom   60 type  2   force =    -0.72837405    0.12859205   -1.74546278
+     atom   61 type  2   force =    -0.58863464    1.15205830    1.30295823
+     atom   62 type  2   force =    -1.72072548    0.25551526    0.54614655
+     atom   63 type  2   force =    -1.33969111    1.36891329    1.36901378
+     atom   64 type  2   force =     1.56075861    1.17962792   -0.54571970
+     atom   65 type  2   force =     1.87219926   -0.67189871    0.51433264
+     atom   66 type  2   force =     1.15521572   -1.67201000   -0.29999580
+     The ionic contribution  to forces
+     atom    1 type  1   force =     2.78325133    1.94117582    0.83162820
+     atom    2 type  1   force =    -1.72044652    3.67404255   -2.60854398
+     atom    3 type  1   force =    -0.50392555   -0.09093905    4.85384325
+     atom    4 type  1   force =     2.25166841    1.33254671    0.62206263
+     atom    5 type  1   force =    -1.76570198   -0.16086194    2.38374585
+     atom    6 type  1   force =     0.43071616    2.06956281    5.11079704
+     atom    7 type  1   force =    -1.77113990   -5.28973033    1.30538340
+     atom    8 type  1   force =     1.41563830   -1.39015745    2.63285837
+     atom    9 type  1   force =     0.18572424   -0.40825248   -3.02226239
+     atom   10 type  1   force =    -4.66290325   -0.43787792   -1.51433386
+     atom   11 type  1   force =    -5.46541651    0.70658016    0.93599245
+     atom   12 type  1   force =    -1.17331436    1.79647295   -2.43294191
+     atom   13 type  1   force =     1.93679453   -5.41282242   -1.77564132
+     atom   14 type  1   force =     0.96610639   -1.90727015    2.13489941
+     atom   15 type  1   force =     1.12572923   -2.40840369   -1.21641467
+     atom   16 type  1   force =     2.34491696    2.78886794    0.25563276
+     atom   17 type  1   force =    -5.03982033   -0.58045344   -0.06593009
+     atom   18 type  1   force =    -1.14392608   -2.11936758   -1.94611644
+     atom   19 type  1   force =     1.14612592   -2.08987144   -1.57089877
+     atom   20 type  1   force =     2.81872768    3.24656053   -1.26593138
+     atom   21 type  1   force =     0.85826038   -3.58530675   -0.74585884
+     atom   22 type  1   force =    -1.74672109   -1.01752443    2.37556389
+     atom   23 type  1   force =    -0.78848127    2.17369180   -1.11208599
+     atom   24 type  1   force =     1.86420024    2.41277148    1.55282279
+     atom   25 type  1   force =    -3.53186437    0.21387242    0.85898936
+     atom   26 type  1   force =     0.82457038   -0.77868703    0.34244695
+     atom   27 type  1   force =     4.33521169    1.32113105    3.90797267
+     atom   28 type  1   force =    -0.35323175    3.08598703    1.94164633
+     atom   29 type  1   force =     1.52206763   -0.60929699   -3.17446331
+     atom   30 type  1   force =     0.82710477   -4.13486242   -1.09715927
+     atom   31 type  1   force =     3.98526836   -1.28422400   -0.72922930
+     atom   32 type  1   force =    -1.71053937    0.65840367    2.02012841
+     atom   33 type  1   force =     0.04453626    2.20397049    2.89078423
+     atom   34 type  1   force =    -3.04849704    5.02751902   -0.02453025
+     atom   35 type  1   force =    -0.91514381    3.60966301    0.65855520
+     atom   36 type  1   force =    -3.28176708    1.19837519   -2.62736287
+     atom   37 type  1   force =    -0.26726876    0.75930508    3.97514125
+     atom   38 type  1   force =    -4.74253109   -1.27099928    2.06168872
+     atom   39 type  1   force =     3.58720172   -0.84904435   -4.74145037
+     atom   40 type  1   force =     1.47693092    2.31635795   -1.27480635
+     atom   41 type  1   force =    -0.16395882   -2.78490216   -0.68721554
+     atom   42 type  1   force =     2.02718720    0.59947447   -3.85039791
+     atom   43 type  1   force =    -2.78947101   -4.78202474   -1.36980541
+     atom   44 type  1   force =     0.97414150   -1.19527381   -1.16234045
+     atom   45 type  2   force =     7.70209357    7.16537991  -16.19222908
+     atom   46 type  2   force =     4.59856317   -9.68917911   10.98488328
+     atom   47 type  2   force =     0.44262706   12.73694821   11.41273737
+     atom   48 type  2   force =     3.08005471  -11.84734859    2.43455204
+     atom   49 type  2   force =    -9.57485024    9.75591992   -7.22683144
+     atom   50 type  2   force =   -10.03498339    4.60248877    9.71324877
+     atom   51 type  2   force =     2.60806609  -13.26695969   -7.74625857
+     atom   52 type  2   force =    -2.41119581   -3.00031899    3.91362445
+     atom   53 type  2   force =   -14.55275021    3.29270613    2.44062985
+     atom   54 type  2   force =    20.43107511   -2.50030397    1.57166251
+     atom   55 type  2   force =    -7.04644505  -10.29055640   -7.15880718
+     atom   56 type  2   force =    12.66328427    8.46394808   -4.84000148
+     atom   57 type  2   force =    -5.85286736    3.03598593   16.88028798
+     atom   58 type  2   force =    11.93402095    8.04516310    6.14445070
+     atom   59 type  2   force =    10.22223136   -6.42191548   -3.85791974
+     atom   60 type  2   force =    10.86238475   -2.74246698   14.98749761
+     atom   61 type  2   force =    -3.99127830   14.33322368    0.25135894
+     atom   62 type  2   force =    -0.27507303   12.05743803   -8.98719594
+     atom   63 type  2   force =    -5.96820906  -10.79633755    7.75113017
+     atom   64 type  2   force =     4.20868511   -4.80895414  -15.14676980
+     atom   65 type  2   force =    -7.79299830   -1.23055054  -16.02390938
+     atom   66 type  2   force =   -14.39844565   -5.44248857   -4.94300358
+     The local contribution  to forces
+     atom    1 type  1   force =    -2.74892102   -1.91907555   -0.73229891
+     atom    2 type  1   force =     1.72842822   -3.68911615    2.62112029
+     atom    3 type  1   force =     0.50235435    0.08547660   -4.86405633
+     atom    4 type  1   force =    -2.23505595   -1.26538451   -0.64499900
+     atom    5 type  1   force =     1.76488482    0.12943943   -2.39160390
+     atom    6 type  1   force =    -0.43728464   -2.07051500   -5.12585930
+     atom    7 type  1   force =     1.71430282    5.19327291   -1.27655509
+     atom    8 type  1   force =    -1.43732409    1.38300628   -2.63391525
+     atom    9 type  1   force =    -0.13482055    0.33590231    2.97321320
+     atom   10 type  1   force =     4.62634964    0.42494142    1.49945184
+     atom   11 type  1   force =     5.29012423   -0.73700073   -0.92169216
+     atom   12 type  1   force =     1.25603276   -1.76681007    2.26927549
+     atom   13 type  1   force =    -1.90430033    5.33062119    1.74754308
+     atom   14 type  1   force =    -0.96042751    1.89325988   -2.07826897
+     atom   15 type  1   force =    -1.10702287    2.39194130    1.18178103
+     atom   16 type  1   force =    -2.24532430   -2.68172392   -0.29692330
+     atom   17 type  1   force =     5.09247763    0.59152730    0.06481287
+     atom   18 type  1   force =     1.18991904    2.02419551    1.88876505
+     atom   19 type  1   force =    -1.18416575    2.05689309    1.53639616
+     atom   20 type  1   force =    -2.84307469   -3.18572059    1.24566691
+     atom   21 type  1   force =    -0.84636811    3.56021484    0.72617465
+     atom   22 type  1   force =     1.74992721    1.03179694   -2.35626307
+     atom   23 type  1   force =     0.77495503   -2.18001771    1.11070261
+     atom   24 type  1   force =    -1.84275267   -2.41911208   -1.59461775
+     atom   25 type  1   force =     3.48530654   -0.19783701   -0.87171244
+     atom   26 type  1   force =    -0.76293545    0.71737318   -0.41297708
+     atom   27 type  1   force =    -4.28097430   -1.32271612   -3.85583763
+     atom   28 type  1   force =     0.33944236   -3.07759488   -1.90834085
+     atom   29 type  1   force =    -1.52782514    0.60679797    3.15879152
+     atom   30 type  1   force =    -0.84042941    4.05138057    1.08773727
+     atom   31 type  1   force =    -3.97252421    1.30626570    0.66044954
+     atom   32 type  1   force =     1.66887018   -0.64635771   -2.06643435
+     atom   33 type  1   force =    -0.05121794   -2.18802064   -2.88354692
+     atom   34 type  1   force =     3.00681507   -4.97270061    0.03596724
+     atom   35 type  1   force =     0.90730706   -3.59760307   -0.63624759
+     atom   36 type  1   force =     3.25065407   -1.22093720    2.62315260
+     atom   37 type  1   force =     0.27931393   -0.76392201   -3.99655729
+     atom   38 type  1   force =     4.71409354    1.26483856   -2.06479126
+     atom   39 type  1   force =    -3.54973582    0.84090048    4.69850482
+     atom   40 type  1   force =    -1.48624983   -2.27265688    1.26246017
+     atom   41 type  1   force =     0.16322835    2.77507409    0.70775361
+     atom   42 type  1   force =    -1.94671005   -0.58499615    3.81554296
+     atom   43 type  1   force =     2.76699072    4.70215926    1.35526089
+     atom   44 type  1   force =    -0.85024933    1.18283706    1.16085426
+     atom   45 type  2   force =    -6.88900251   -8.24549441   14.63474687
+     atom   46 type  2   force =    -4.55195514    7.94381913  -11.71422321
+     atom   47 type  2   force =     0.00618783  -12.03844775  -12.80174739
+     atom   48 type  2   force =    -2.72968715   12.92477904   -3.82317303
+     atom   49 type  2   force =    10.18997214   -8.14476291    7.96122621
+     atom   50 type  2   force =    11.31469080   -4.74028879   -8.10375487
+     atom   51 type  2   force =    -3.35029770   14.64113200    6.70910373
+     atom   52 type  2   force =     0.81749692    2.57125103   -3.14946088
+     atom   53 type  2   force =    15.38649916   -1.77659885   -1.30296253
+     atom   54 type  2   force =   -19.03816782    1.75286962   -0.33625689
+     atom   55 type  2   force =     6.26601632   10.77519476    5.69745222
+     atom   56 type  2   force =   -11.50991369   -9.22549866    4.02540945
+     atom   57 type  2   force =     6.09454936   -2.57514053  -15.26907647
+     atom   58 type  2   force =   -11.97467206   -8.93733431   -7.68244844
+     atom   59 type  2   force =    -9.69171584    7.41211437    4.94292889
+     atom   60 type  2   force =   -10.12649113    2.58201320  -13.22273223
+     atom   61 type  2   force =     4.58109521  -15.46204942   -1.47892368
+     atom   62 type  2   force =     1.90051440  -12.27688780    8.44368939
+     atom   63 type  2   force =     7.23705532    9.51295108   -9.01892086
+     atom   64 type  2   force =    -5.71124687    3.70595556   15.65817568
+     atom   65 type  2   force =     5.97813726    1.83780177   15.53906482
+     atom   66 type  2   force =    13.22265788    7.09373097    5.23582370
+     The core correction contribution to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    4 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    5 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    6 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    7 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    8 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    9 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   10 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   11 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   12 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   13 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   14 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   15 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   16 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   17 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   18 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   19 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   20 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   21 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   22 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   23 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   24 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   25 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   26 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   27 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   28 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   29 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   30 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   31 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   32 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   33 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   34 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   35 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   36 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   37 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   38 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   39 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   40 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   41 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   42 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   43 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   44 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   45 type  2   force =     0.00905340   -0.01230366   -0.01533077
+     atom   46 type  2   force =     0.00022957   -0.01861226   -0.00956459
+     atom   47 type  2   force =     0.00520689    0.00648382   -0.01646817
+     atom   48 type  2   force =     0.00286443    0.01097113   -0.01475909
+     atom   49 type  2   force =     0.00845690    0.01552023    0.00732719
+     atom   50 type  2   force =     0.01210034   -0.00121840    0.01399024
+     atom   51 type  2   force =    -0.00775352    0.01440019   -0.01004805
+     atom   52 type  2   force =    -0.01669167   -0.00314633    0.00790659
+     atom   53 type  2   force =     0.01070776    0.01606172    0.01172356
+     atom   54 type  2   force =     0.01373023   -0.00710039    0.01260850
+     atom   55 type  2   force =    -0.00842456    0.00553074   -0.01539492
+     atom   56 type  2   force =     0.01114278   -0.00844494   -0.00888824
+     atom   57 type  2   force =     0.00407969    0.00353428    0.01495114
+     atom   58 type  2   force =    -0.00096946   -0.00936052   -0.01669328
+     atom   59 type  2   force =     0.00602770    0.01057991    0.01133623
+     atom   60 type  2   force =     0.00783193   -0.00075463    0.01817756
+     atom   61 type  2   force =     0.00593573   -0.01300403   -0.01367791
+     atom   62 type  2   force =     0.01795913   -0.00254033   -0.00458877
+     atom   63 type  2   force =     0.01347107   -0.01435325   -0.01467430
+     atom   64 type  2   force =    -0.01609879   -0.01161094    0.00586374
+     atom   65 type  2   force =    -0.01899532    0.00747022   -0.00479851
+     atom   66 type  2   force =    -0.01089429    0.01720741    0.00279441
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    4 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    5 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    6 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    7 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    8 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    9 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   10 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   11 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   12 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   13 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   14 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   15 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   16 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   17 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   18 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   19 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   20 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   21 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   22 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   23 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   24 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   25 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   26 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   27 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   28 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   29 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   30 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   31 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   32 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   33 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   34 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   35 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   36 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   37 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   38 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   39 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   40 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   41 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   42 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   43 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   44 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom   45 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   46 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   47 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   48 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   49 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   50 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   51 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   52 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   53 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   54 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   55 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   56 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   57 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   58 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   59 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   60 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   61 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   62 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   63 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   64 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   65 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom   66 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00000374   -0.00001128   -0.00002852
+     atom    2 type  1   force =     0.00003119   -0.00003335   -0.00000441
+     atom    3 type  1   force =     0.00000913   -0.00001239   -0.00003146
+     atom    4 type  1   force =    -0.00000703   -0.00002192    0.00000153
+     atom    5 type  1   force =     0.00000410   -0.00000357   -0.00000907
+     atom    6 type  1   force =    -0.00000477   -0.00000278   -0.00003129
+     atom    7 type  1   force =     0.00002035    0.00004538   -0.00001101
+     atom    8 type  1   force =    -0.00000929    0.00000389   -0.00003207
+     atom    9 type  1   force =    -0.00001099    0.00001624    0.00000997
+     atom   10 type  1   force =     0.00005219    0.00002165   -0.00001357
+     atom   11 type  1   force =     0.00006247    0.00000479    0.00003400
+     atom   12 type  1   force =     0.00002446   -0.00000501    0.00004451
+     atom   13 type  1   force =    -0.00001373    0.00002646    0.00000111
+     atom   14 type  1   force =    -0.00000556    0.00000424   -0.00000052
+     atom   15 type  1   force =    -0.00001653    0.00000132    0.00000798
+     atom   16 type  1   force =    -0.00002176   -0.00002558   -0.00000836
+     atom   17 type  1   force =    -0.00002123   -0.00000533   -0.00000139
+     atom   18 type  1   force =     0.00001621   -0.00003632   -0.00002204
+     atom   19 type  1   force =     0.00001206   -0.00000277    0.00000348
+     atom   20 type  1   force =     0.00000604   -0.00001664    0.00000840
+     atom   21 type  1   force =    -0.00001594    0.00001536   -0.00000185
+     atom   22 type  1   force =     0.00001190   -0.00000528    0.00000644
+     atom   23 type  1   force =     0.00003536   -0.00001155    0.00000141
+     atom   24 type  1   force =     0.00000929   -0.00001072   -0.00004047
+     atom   25 type  1   force =     0.00000264    0.00001311    0.00000653
+     atom   26 type  1   force =    -0.00001246    0.00000644    0.00001586
+     atom   27 type  1   force =    -0.00001277   -0.00000842   -0.00002730
+     atom   28 type  1   force =     0.00000727   -0.00001067   -0.00000821
+     atom   29 type  1   force =    -0.00000025   -0.00001018    0.00004112
+     atom   30 type  1   force =     0.00001364    0.00004893    0.00000828
+     atom   31 type  1   force =    -0.00001297    0.00000330    0.00003413
+     atom   32 type  1   force =     0.00003829   -0.00001981    0.00001568
+     atom   33 type  1   force =    -0.00000233   -0.00000461   -0.00002857
+     atom   34 type  1   force =     0.00002476   -0.00003134    0.00000003
+     atom   35 type  1   force =     0.00000935   -0.00000937   -0.00000437
+     atom   36 type  1   force =     0.00002143   -0.00000895    0.00000497
+     atom   37 type  1   force =    -0.00000581   -0.00008490   -0.00009018
+     atom   38 type  1   force =     0.00012209   -0.00002230   -0.00003696
+     atom   39 type  1   force =    -0.00001750    0.00000049    0.00001123
+     atom   40 type  1   force =    -0.00000171   -0.00000130   -0.00000889
+     atom   41 type  1   force =    -0.00001649    0.00002084   -0.00001807
+     atom   42 type  1   force =    -0.00003585   -0.00000225    0.00000562
+     atom   43 type  1   force =     0.00000729    0.00004780    0.00000723
+     atom   44 type  1   force =    -0.00003121    0.00000871    0.00000164
+     atom   45 type  2   force =     0.00007158   -0.00013599   -0.00019021
+     atom   46 type  2   force =    -0.00000018   -0.00014613   -0.00010843
+     atom   47 type  2   force =     0.00001036    0.00007603   -0.00013812
+     atom   48 type  2   force =     0.00006573    0.00022520   -0.00011290
+     atom   49 type  2   force =     0.00015812    0.00019250    0.00002075
+     atom   50 type  2   force =     0.00027850   -0.00000996    0.00032873
+     atom   51 type  2   force =    -0.00008029    0.00009872   -0.00006364
+     atom   52 type  2   force =    -0.00020590   -0.00021167    0.00001096
+     atom   53 type  2   force =    -0.00005598    0.00003715    0.00004014
+     atom   54 type  2   force =     0.00017931   -0.00008030    0.00015275
+     atom   55 type  2   force =    -0.00005458    0.00004624   -0.00008282
+     atom   56 type  2   force =     0.00018354   -0.00008493   -0.00014297
+     atom   57 type  2   force =     0.00005489    0.00011664    0.00018314
+     atom   58 type  2   force =     0.00006604   -0.00008077   -0.00012175
+     atom   59 type  2   force =     0.00002416    0.00010013    0.00013997
+     atom   60 type  2   force =     0.00006954   -0.00007237    0.00014243
+     atom   61 type  2   force =     0.00008793   -0.00013451   -0.00005102
+     atom   62 type  2   force =     0.00012944   -0.00006308   -0.00008516
+     atom   63 type  2   force =     0.00030682   -0.00018526   -0.00025945
+     atom   64 type  2   force =    -0.00007438   -0.00007395   -0.00001414
+     atom   65 type  2   force =    -0.00021459    0.00007862   -0.00005128
+     atom   66 type  2   force =    -0.00009429    0.00021552    0.00004208
+
+     Total force =     0.532640     Total SCF correction =     0.001130
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  4.983E-01 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -2.84
+  -0.00001890  -0.00000006  -0.00000066           -2.78       -0.01       -0.10
+  -0.00000006  -0.00001911  -0.00000026           -0.01       -2.81       -0.04
+  -0.00000066  -0.00000026  -0.00001981           -0.10       -0.04       -2.91
+
+
+     init_run     :      8.20s CPU      8.64s WALL (       1 calls)
+     electrons    :     83.96s CPU     90.09s WALL (       1 calls)
+     forces       :      5.60s CPU      5.92s WALL (       1 calls)
+     stress       :     16.68s CPU     17.03s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      3.17s CPU      3.35s WALL (       1 calls)
+     potinit      :      1.30s CPU      1.37s WALL (       1 calls)
+     hinit0       :      1.01s CPU      1.06s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     56.09s CPU     59.35s WALL (      10 calls)
+     sum_band     :     16.05s CPU     17.43s WALL (      10 calls)
+     v_of_rho     :      6.86s CPU      7.44s WALL (      11 calls)
+     newd         :      3.59s CPU      4.51s WALL (      11 calls)
+     PAW_pot      :      0.99s CPU      1.00s WALL (      11 calls)
+     mix_rho      :      1.22s CPU      1.33s WALL (      10 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.83s CPU      0.87s WALL (      21 calls)
+     init_us_2:cp :      0.83s CPU      0.87s WALL (      21 calls)
+     regterg      :     55.07s CPU     58.32s WALL (      10 calls)
+
+     Called by *egterg:
+     rdiaghg      :      0.22s CPU      0.22s WALL (      31 calls)
+     h_psi        :     50.00s CPU     52.77s WALL (      32 calls)
+     s_psi        :      1.37s CPU      1.38s WALL (      32 calls)
+     g_psi        :      0.16s CPU      0.16s WALL (      21 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      1.22s CPU      1.24s WALL (      32 calls)
+     vloc_psi     :     46.97s CPU     49.69s WALL (      32 calls)
+     add_vuspsi   :      1.35s CPU      1.36s WALL (      32 calls)
+
+     General routines
+     calbec       :      1.82s CPU      1.85s WALL (      47 calls)
+     fft          :      4.13s CPU      4.71s WALL (     119 calls)
+     ffts         :      0.28s CPU      0.32s WALL (      10 calls)
+     fftw         :     40.58s CPU     43.68s WALL (    2894 calls)
+
+     Parallel routines
+
+     PWSCF        :   1m54.56s CPU   2m 1.86s WALL
+
+
+   This run was terminated on:   5:48:24  27Mar2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

@@ -1,0 +1,33 @@
+# bulk water
+
+units           metal
+boundary        p p p
+newton 		off
+atom_style      atomic
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+read_data	input.lmp
+mass 		1 2
+mass		2 16
+
+variable	sysvol		equal vol
+variable	sysmass		equal mass(all)/6.0221367e+23
+variable	sysdensity	equal v_sysmass/v_sysvol/1.0e-24 
+
+pair_style	nequip
+pair_coeff  	* * water-deploy.pth H O
+
+
+velocity        all create 300.0 2345678 rot no dist gaussian
+fix             1 all nvt temp 300.0 300.0 0.05
+timestep        0.0005
+thermo_style    custom step pe ke etotal v_sysdensity temp press vol
+thermo          10
+dump            101 all xyz 10 water.xyz
+dump_modify     101 element H O
+fix             extra all print 1 "$(step), $(ke), $(pe), $(etotal), $(temp), $(press), $(vol)" file logfile screen no
+
+run             50000
+#
