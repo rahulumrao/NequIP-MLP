@@ -5,9 +5,9 @@ This tutorial introduces a Machine Learning Interatomic Potential (MLP) model ca
 
 This particular tutorial is for the 22-water molecules in a 40 Å³ periodic box. The steps to build the MLP contain three stages:
 
-    1. Data generation		=> [00.data]
-    2. Training			=> [01.train]
-    3. Molecular Dynamics	=> [02.lmp]
+    1. Data generation          [00.data]
+    2. Training                 [01.train]
+    3. Molecular Dynamics       [02.lmp]
 
 For data generation, we will use the [Quantum Espresso](https://www.quantum-espresso.org/) package.
 
